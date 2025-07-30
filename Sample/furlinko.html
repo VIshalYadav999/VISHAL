@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FurLinko - Modern Furniture for Your Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Montserrat', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        .testimonial-card:hover {
+            transform: scale(1.02);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex-shrink-0 flex items-center">
+                    <h1 class="text-xl font-bold text-gray-800">Fur<span class="text-amber-600">Linko</span></h1>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-center space-x-4">
+                        <a href="#" class="text-gray-800 hover:text-amber-600 px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                        <a href="#shop" class="text-gray-600 hover:text-amber-600 px-3 py-2 rounded-md text-sm font-medium">Shop</a>
+                        <a href="#categories" class="text-gray-600 hover:text-amber-600 px-3 py-2 rounded-md text-sm font-medium">Categories</a>
+                        <a href="#about" class="text-gray-600 hover:text-amber-600 px-3 py-2 rounded-md text-sm font-medium">About</a>
+                        <a href="#contact" class="text-gray-600 hover:text-amber-600 px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <button class="p-2 text-gray-600 hover:text-amber-600">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <button class="p-2 text-gray-600 hover:text-amber-600">
+                        <i class="fas fa-user"></i>
+                    </button>
+                    <button class="p-2 text-gray-600 hover:text-amber-600 relative">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="absolute -top-1 -right-1 bg-amber-600 text-white text-xs rounded-full h-4 w-4 flex items-center justify-center">2</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div class="md:order-1 order-2">
+                    <h2 class="text-4xl font-bold text-gray-800 mb-4">Modern Furniture for <span class="text-amber-600">Modern Living</span></h2>
+                    <p class="text-gray-600 mb-6">Discover handcrafted furniture that combines contemporary design with timeless comfort. Each piece is designed to elevate your space.</p>
+                    <div class="flex space-x-4">
+                        <button class="bg-amber-600 hover:bg-amber-700 text-white px-6 py-3 rounded-md font-medium">Shop Now</button>
+                        <button class="border border-gray-300 hover:bg-gray-100 text-gray-700 px-6 py-3 rounded-md font-medium">Learn More</button>
+                    </div>
+                </div>
+                <div class="md:order-2 order-1">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/e5756141-855f-4101-b5f7-7c3fd742cb6c.png" alt="Minimalist Scandinavian-style sofa in light grey fabric with wooden legs in a modern living room setting" class="rounded-lg shadow-xl w-full" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="categories" class="bg-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-2">Our Collections</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Browse through our carefully curated furniture collections for every room in your home.</p>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <a href="#" class="relative group overflow-hidden rounded-lg">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/ad06c8e9-7454-4ac4-a326-9d92c3cf54aa.png" alt="Modern living room furniture set with leather sofas and coffee table" class="w-full h-64 object-cover transition duration-300 group-hover:scale-105" />
+                    <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
+                        <h3 class="text-white text-xl font-bold">Living Room</h3>
+                    </div>
+                </a>
+                <a href="#" class="relative group overflow-hidden rounded-lg">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/5a1e7525-ad99-403b-8e39-526563339395.png" alt="Elegant bedroom set with wooden bed frame, nightstands and dresser" class="w-full h-64 object-cover transition duration-300 group-hover:scale-105" />
+                    <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
+                        <h3 class="text-white text-xl font-bold">Bedroom</h3>
+                    </div>
+                </a>
+                <a href="#" class="relative group overflow-hidden rounded-lg">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/7761d3cf-e31a-4823-8a5e-eb2cb1e3f977.png" alt="Contemporary dining set with wooden table and upholstered chairs" class="w-full h-64 object-cover transition duration-300 group-hover:scale-105" />
+                    <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
+                        <h3 class="text-white text-xl font-bold">Dining</h3>
+                    </div>
+                </a>
+                <a href="#" class="relative group overflow-hidden rounded-lg">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/e6a76ab7-8d43-4138-8bbe-4f824300eb23.png" alt="Modern home office setup with wooden desk and ergonomic chair" class="w-full h-64 object-cover transition duration-300 group-hover:scale-105" />
+                    <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
+                        <h3 class="text-white text-xl font-bold">Office</h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section id="shop" class="py-12 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-2">Featured Products</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Our handpicked selection of the season's most popular pieces</p>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+                <!-- Product 1 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md product-card transition duration-300">
+                    <div class="relative">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/7e81ef11-7676-483f-8047-5dc0f7b9466e.png" alt="Scandinavian-style armchair in light beige fabric with dark wooden legs" class="w-full" />
+                        <span class="absolute top-4 right-4 bg-amber-600 text-white text-xs px-2 py-1 rounded-full">New</span>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold text-gray-800">Ella Armchair</h3>
+                        <div class="flex items-center mt-1">
+                            <div class="flex text-amber-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span class="text-gray-600 text-sm ml-2">(24 reviews)</span>
+                        </div>
+                        <div class="mt-3 flex justify-between items-center">
+                            <span class="text-lg font-bold text-gray-800">$299</span>
+                            <button class="text-amber-600 hover:text-amber-700">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 2 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md product-card transition duration-300">
+                    <div class="relative">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/4e11fc2b-f99c-4fc9-9168-78d8c325f2a5.png" alt="Modern coffee table with glass top and geometric wooden base" class="w-full" />
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold text-gray-800">Nordic Coffee Table</h3>
+                        <div class="flex items-center mt-1">
+                            <div class="flex text-amber-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <span class="text-gray-600 text-sm ml-2">(18 reviews)</span>
+                        </div>
+                        <div class="mt-3 flex justify-between items-center">
+                            <span class="text-lg font-bold text-gray-800">$349</span>
+                            <button class="text-amber-600 hover:text-amber-700">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 3 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md product-card transition duration-300">
+                    <div class="relative">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/9a1eba88-c270-4b00-8290-7f7d7ddfd545.png" alt="Minimalist bookshelf with natural wood finish and adjustable shelves" class="w-full" />
+                        <span class="absolute top-4 right-4 bg-red-500 text-white text-xs px-2 py-1 rounded-full">Sale</span>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold text-gray-800">Floating Bookshelf</h3>
+                        <div class="flex items-center mt-1">
+                            <div class="flex text-amber-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="text-gray-600 text-sm ml-2">(32 reviews)</span>
+                        </div>
+                        <div class="mt-3 flex justify-between items-center">
+                            <div>
+                                <span class="text-lg font-bold text-gray-800">$199</span>
+                                <span class="text-sm text-gray-500 line-through ml-2">$249</span>
+                            </div>
+                            <button class="text-amber-600 hover:text-amber-700">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 4 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md product-card transition duration-300">
+                    <div class="relative">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/590f3a18-39a9-4c34-b94c-411c56dc0ab3.png" alt="Contemporary armchair in deep blue velvet with golden metal legs" class="w-full" />
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold text-gray-800">Velvet Lounge Chair</h3>
+                        <div class="flex items-center mt-1">
+                            <div class="flex text-amber-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="text-gray-600 text-sm ml-2">(29 reviews)</span>
+                        </div>
+                        <div class="mt-3 flex justify-between items-center">
+                            <span class="text-lg font-bold text-gray-800">$459</span>
+                            <button class="text-amber-600 hover:text-amber-700">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-10">
+                <button class="border border-gray-300 hover:bg-gray-100 text-gray-700 px-6 py-3 rounded-md font-medium">View All Products</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-12 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-2">What Our Customers Say</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Hear from homeowners who have transformed their spaces with our furniture</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-6 rounded-lg testimonial-card transition duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-amber-400 mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">"The Ella Armchair exceeded my expectations. It's not just beautiful but incredibly comfortable. I've received so many compliments on it!"</p>
+                    <div class="flex items-center">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/491ee99e-8c4c-4ec3-9b4a-3c6da390a768.png" alt="Portrait of Sarah Johnson, a customer from New York" class="rounded-full w-10 h-10 mr-3" />
+                        <div>
+                            <h4 class="font-medium text-gray-800">Sarah Johnson</h4>
+                            <p class="text-sm text-gray-500">New York</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg testimonial-card transition duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-amber-400 mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">"The quality of the Nordic Coffee Table is outstanding. It's the perfect centerpiece for our living room and arrived quickly and well-packaged."</p>
+                    <div class="flex items-center">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/78ca7731-a107-42a0-88c7-0a7914e515e3.png" alt="Portrait of Michael Chen, a customer from San Francisco" class="rounded-full w-10 h-10 mr-3" />
+                        <div>
+                            <h4 class="font-medium text-gray-800">Michael Chen</h4>
+                            <p class="text-sm text-gray-500">San Francisco</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg testimonial-card transition duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-amber-400 mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">"I bought the Floating Bookshelf for my home office and it's exactly what I needed. The installation was easy and it looks gorgeous with my book collection."</p>
+                    <div class="flex items-center">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/ca917f84-7a94-41f3-b18e-a00a4075e134.png" alt="Portrait of Emma Rodriguez, a customer from Chicago" class="rounded-full w-10 h-10 mr-3" />
+                        <div>
+                            <h4 class="font-medium text-gray-800">Emma Rodriguez</h4>
+                            <p class="text-sm text-gray-500">Chicago</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="py-12 bg-amber-600">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div>
+                    <h2 class="text-3xl font-bold text-white mb-2">Stay Updated</h2>
+                    <p class="text-amber-100 mb-6">Subscribe to our newsletter for exclusive offers, new arrivals, and design inspiration.</p>
+                </div>
+                <div>
+                    <form class="flex flex-col sm:flex-row gap-2">
+                        <input type="email" placeholder="Your email address" class="px-4 py-3 rounded-md flex-grow focus:outline-none focus:ring-2 focus:ring-amber-300" />
+                        <button type="submit" class="bg-gray-800 hover:bg-gray-900 text-white px-6 py-3 rounded-md font-medium whitespace-nowrap">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Fur<span class="text-amber-600">Linko</span></h3>
+                    <p class="text-gray-400">Modern furniture for modern living. Quality craftsmanship meets contemporary design.</p>
+                    <div class="flex space-x-4 mt-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">Shop</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">All Products</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Best Sellers</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">New Arrivals</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Sale</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">About</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Our Story</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Designers</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Sustainability</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Press</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">Customer Care</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Contact Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">FAQs</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Shipping & Returns</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Care Guide</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm">© 2023 FurLinko. All rights reserved.</p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="#" class="text-gray-400 hover:text-white text-sm">Privacy Policy</a>
+                    <a href="#" class="text-gray-400 hover:text-white text-sm">Terms of Service</a>
+                    <a href="#" class="text-gray-400 hover:text-white text-sm">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu (hidden by default) -->
+    <div id="mobile-menu" class="fixed inset-0 bg-white z-50 hidden">
+        <div class="flex justify-between items-center p-4 border-b">
+            <h1 class="text-xl font-bold text-gray-800">Fur<span class="text-amber-600">Linko</span></h1>
+            <button id="close-menu" class="text-gray-600">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="p-4">
+            <ul class="space-y-4">
+                <li><a href="#" class="text-gray-800 hover:text-amber-600 block py-2">Home</a></li>
+                <li><a href="#shop" class="text-gray-800 hover:text-amber-600 block py-2">Shop</a></li>
+                <li><a href="#categories" class="text-gray-800 hover:text-amber-600 block py-2">Categories</a></li>
+                <li><a href="#about" class="text-gray-800 hover:text-amber-600 block py-2">About</a></li>
+                <li><a href="#contact" class="text-gray-800 hover:text-amber-600 block py-2">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        // Simple mobile menu toggle functionality
+        document.getElementById('mobile-menu-toggle').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.remove('hidden');
+        });
+
+        document.getElementById('close-menu').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.add('hidden');
+        });
+
+        // Simulate adding to cart
+        document.querySelectorAll('.fa-shopping-cart').forEach(button => {
+            button.addEventListener('click', function(e) {
+                e.preventDefault();
+                alert('Item added to your cart!');
+            });
+        });
+    </script>
+</body>
+</html>
+
